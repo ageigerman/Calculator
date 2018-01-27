@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var HelloWorld: UILabel!
     @IBOutlet weak var BasicButton: UIButton!
+    @IBOutlet weak var Input1: UITextField!
+    @IBOutlet weak var Input2: UITextField!
+    @IBOutlet weak var OperatorC: UISegmentedControl!
     var num = 0;
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +28,9 @@ class ViewController: UIViewController {
 
     
     @IBAction func BasicTouch(_ sender: Any) {
-        num+=1;
-        HelloWorld.text = String(repeating: "A", count: num) + "H!";
+        let x = Double(Input1.text!);
+        let y = Double(Input2.text!);
+        HelloWorld.text = String(x!+y!);
     }
 }
 

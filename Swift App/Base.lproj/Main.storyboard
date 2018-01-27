@@ -18,55 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shp-tR-4HL">
-                                <rect key="frame" x="142" y="120" width="91" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1J-7R-Vzj">
-                                <rect key="frame" x="126.5" y="260.5" width="121" height="30"/>
-                                <state key="normal" title="[press to screem]"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1J-7R-Vzj">
+                                <rect key="frame" x="155" y="69" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="BasicTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BGS-Er-vd2"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PZC-1F-yAQ">
-                                <rect key="frame" x="96" y="414" width="183" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PZC-1F-yAQ">
+                                <rect key="frame" x="128" y="107" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F0g-Jd-cYc">
-                                <rect key="frame" x="96" y="452" width="183" height="30"/>
+                                <rect key="frame" x="128" y="145" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="23p-xJ-4WE">
-                                <rect key="frame" x="127" y="490" width="121" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shp-tR-4HL">
+                                <rect key="frame" x="156" y="40" width="65" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Add"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="PZC-1F-yAQ" firstAttribute="top" secondItem="V1J-7R-Vzj" secondAttribute="bottom" constant="123.5" id="3Wp-rV-Erc"/>
-                            <constraint firstItem="V1J-7R-Vzj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F69-vs-b1k"/>
-                            <constraint firstItem="V1J-7R-Vzj" firstAttribute="top" secondItem="Shp-tR-4HL" secondAttribute="bottom" constant="120" id="NKV-xv-jfk"/>
-                            <constraint firstItem="Shp-tR-4HL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O1G-ts-qUQ"/>
-                            <constraint firstItem="PZC-1F-yAQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ope-yA-lPv"/>
-                            <constraint firstItem="Shp-tR-4HL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="uhk-gI-h7x"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="BasicButton" destination="V1J-7R-Vzj" id="82B-cg-MqH"/>
                         <outlet property="HelloWorld" destination="Shp-tR-4HL" id="7UL-RO-u0H"/>
+                        <outlet property="Input1" destination="PZC-1F-yAQ" id="tnH-qa-ycS"/>
+                        <outlet property="Input2" destination="F0g-Jd-cYc" id="zW3-pL-X3C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
